@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <style>
+        .album-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .photo-album {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .photo-frame {
+            width: 300px;
+            height: 250px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid greenyellow;
+        }
+
+        .photo {
+            height: 100%;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .photo-detail {
+            position: absolute;
+            width: 280px;
+            bottom: -185px;
+            padding: 10px 10px 0;
+            color: #fff;
+            text-align: justify;
+            border-radius: 10px;
+            background-color: rgba(119, 136, 153, 0.479);
+        }
+
+        .photo-frame:hover .photo-detail {
+            bottom: 20px;
+            transition: .7s linear;
+        }
+
+        .photo-frame:hover .photo img {
+            transform: scale(1.2);
+            transition: 1s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>This is a photo album</h1> -->
+    <section class="album-container">
+        <h1>Photo Album</h1>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./download.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>This is tiger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque nam recusandae
+                        officiis quibusdam eius repudiandae lorem30 dolorum accusamus. Fugiat, repellat?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./download.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>This is tiger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque nam recusandae
+                        officiis quibusdam eius repudiandae lorem30 dolorum accusamus. Fugiat, repellat?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./download.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>This is tiger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque nam recusandae
+                        officiis quibusdam eius repudiandae lorem30 dolorum accusamus. Fugiat, repellat?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./download.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>This is tiger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque nam recusandae
+                        officiis quibusdam eius repudiandae lorem30 dolorum accusamus. Fugiat, repellat?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./download.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>This is tiger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque nam recusandae
+                        officiis quibusdam eius repudiandae lorem30 dolorum accusamus. Fugiat, repellat?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./download.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>This is tiger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque nam recusandae
+                        officiis quibusdam eius repudiandae lorem30 dolorum accusamus. Fugiat, repellat?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./download.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>This is tiger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque nam recusandae
+                        officiis quibusdam eius repudiandae lorem30 dolorum accusamus. Fugiat, repellat?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./download.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>This is tiger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque nam recusandae
+                        officiis quibusdam eius repudiandae lorem30 dolorum accusamus. Fugiat, repellat?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
